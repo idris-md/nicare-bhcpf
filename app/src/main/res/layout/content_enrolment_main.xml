@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.EnrolmentMainActivity"
+    tools:showIn="@layout/activity_enrolment_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="@color/iconColor"
+                app:cardCornerRadius="6dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:background="@drawable/border_button"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:background="@drawable/border_button"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_id"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/border_button"
+                    android:fontFamily="@font/roboto_regular"
+
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_mobile"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:background="@drawable/border_button"
+                    android:fontFamily="@font/roboto_regular"
+
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_hc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_mobile"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:background="@drawable/border_button"
+                    android:fontFamily="@font/roboto_regular"
+
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_mobile"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:background="@drawable/border_button"
+                    android:fontFamily="@font/roboto_regular"
+
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_stat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_mobile"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:background="@drawable/border_button"
+                    android:fontFamily="@font/roboto_regular"
+android:visibility="gone"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toLeftOf="@+id/btnAddSpouse"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Spouse's"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnAddSpouse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/border_button_cadet"
+                            android:drawableRight="@drawable/ic_person_add_24dp"
+                            android:text="Add Spouse"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="9sp" />
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:layout_above="@+id/recyclerSpouse"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/grey" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerSpouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toLeftOf="@+id/btnAddChild"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Children's"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnAddChild"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/border_button_cadet"
+                            android:drawableRight="@drawable/ic_person_add_24dp"
+                            android:text="Add Child"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="9sp" />
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:layout_above="@+id/recyclerSpouse"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/grey" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerChildren"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/border_button_cadet"
+            android:text="Done/Close"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="bottom"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</ScrollView>

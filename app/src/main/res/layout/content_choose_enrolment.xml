@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.enrol.ChooseEnrolmentTypeActivity"
+    tools:showIn="@layout/activity_choose_enrolment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnNew"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardBackgroundColor="@color/dark_grey"
+            app:cardCornerRadius="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_person_add" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/imageView"
+                    android:gravity="start"
+                    android:layout_marginTop="8dp"
+                    android:text="New Enrolment"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@id/tv"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/imageView"
+                    android:gravity="start"
+                    android:text="This module is use to enrol new principal to the scheme using activated and sold NiCare Premium."
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/tv"
+                    android:background="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/darkslateblue"
+            app:cardCornerRadius="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewb"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+
+                    android:src="@drawable/ic_update_24dp" />
+
+                <TextView
+                    android:id="@+id/tvb"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+android:layout_marginTop="8dp"                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/imageViewb"
+                    android:gravity="start"
+
+                    android:text="Update Enrolment"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+                <TextView
+
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@id/tvb"
+                    android:layout_toRightOf="@id/imageViewb"
+                    android:gravity="start"
+
+                    android:text="To add dependent to and already enrolled principal please use this module."
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/tvb"
+                    android:background="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

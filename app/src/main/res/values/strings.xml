@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">BHCPF | NiCare</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="btn_enrol">Enrol (2 times)</string>
+    <string name="btn_capture">Capture (1 times)</string>
+
+    <string name="tv_ready"></string>
+    <string name="btn_forever">Capture Forever</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_login">Login</string>
+    <string name="dont_have_account">Forgot Your NiCare Account password?</string>
+    <string name="login">Log in</string>
+    <string name="nicare">NiCare</string>
+    <string name="login_instructon">Provide your NiCare profile Email and Password to login</string>
+    <string name="title_activity_enrolled">Enrolees</string>
+    <string name="principal">Principal</string>
+    <string name="title_activity_enrolled_detail">NiCare Records</string>
+    <string name="dependents">Dependent(s)</string>
+    <string name="add_spouse">Enroll Dependent</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_enrolment">NiCare Enrolment</string>
+    <string name="title_activity_biometric">Enrol Fingerprint</string>
+    <string name="title_activity_main">NiCare Mobile</string>
+    <string name="content_authority">com.nicare.ees</string>
+    <string name="sync_account_type">com.nicare.ees</string>
+    <string name="title_activity_setting">Settings</string>
+
+    <string name="sync_pref">Sync</string>
+    <string name="sync_pref_summary">Automatically synchronize record with server</string>
+    <string name="pref_connection_type_tittle">Sync Connection Type</string>
+    <string name="pref_connection_type_default">WiFi/Mobile Data</string>
+    <string name="pref_connection_type_summary">WiFi</string>
+    <string name="principal_id">id</string>
+
+    <string name="pref_device_type_tittle">Biometric Device</string>
+    <string name="pref_device_type_default">FP07 Biometric</string>
+    <string name="pref_device_type_summary">USB Biometric</string>
+
+    <string name="title_formal_sector">Formal Sector</string>
+    <string name="pref_biometric_type_default">FP07 Biometric</string>
+    <string name="title_activity_record_update">Biodata update</string>
+    <string name="title_activity_enrolled_dependent">NiCare Dependent</string>
+    <string name="title_activity_verified_detail">NiCare Detail</string>
+    <string name="title_activity_enroll_principal">NiCare Principal</string>
+    <string name="title_activity_enroll_dependent">NiCare Dependent</string>
+    <string name="title_activity_enrol_vulnerable">NiCare Vulnerable</string>
+    <string name="title_activity_enrolment_main">Principal Detail</string>
+    <string name="biometric_error">You\'ve not capture Fingerprint for this enrolee, please capture  fingerprint to proceed</string>
+    <string name="title_activity_enrolled_dependent_pin_v">NiCare PIN</string>
+
+
+    <string name="btn_match">Match</string>
+
+
+    <string name="tv_null"></string>
+
+    <string name="rd_text1">ANSI378-2004</string>
+    <string name="rd_text2">ISO19794-2005</string>
+    <string name="rd_text3">ISO19794-2009</string>
+    <string name="rd_text4">ISO19794-2011</string>
+
+    <string name="action_dir0">Default</string>
+    <string name="action_dir1">Mirror Vertically </string>
+    <string name="action_dir2">Mirror Horizontally</string>
+    <string name="action_dir3">Rotate 180</string>
+
+    <string name="action_test">Match Test</string>
+    <string name="title_activity_uare_umain">UareUMainActivity</string>
+    <string name="server_error">Oops!!! An error occur while communicating with sever, please try a</string>
+    <string name="network_failure">Network Failure</string>
+    <string name="error_msg">Error message</string>
+    <string name="msg_error">Please fill in all fields before saving record</string>
+    <string name="title_activity_live_dependent_enolment">Enroll Beneficiary</string>
+    <string name="title_activity_live_dependent_enrolment_id">Principal\'s Enrolment ID</string>
+    <string name="title_activity_offline_records">Enrolled Beneficiaries</string>
+    <string name="title_activity_vulnerable_list">Vulnerables</string>
+    <string name="title_activity_formal_list">Formal Sector</string>
+    <string name="title_activity_synced_enrolment_detail">Enroll Beneficiary</string>
+    <string name="title_activity_edit">Info Update</string>
+    <string name="title_activity_capture_id">Enrolee Capturing</string>
+    <string name="title_activity_capture_detail">Enrolee Capturing</string>
+    <string name="title_activity_choose_enrolment">Enrol Beneficiary</string>
+    <string name="photo_error">You\\\'ve not capture Photo for this user, please capture photo to proceed</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_password_auth">NiCare EES</string>
+
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_backspace">Back</string>
+    <string name="surname">Surname</string>
+    <string name="first_name">First Name</string>
+    <string name="other_name">Other Name</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email_address">Email address</string>
+    <string name="home_address">Home address</string>
+    <string name="residential_address">Residential Address:</string>
+    <string name="next_of_kin_details">Next of Kin(s) Details:</string>
+    <string name="next_of_kin_full_name">Next of Kin Full Name [Surname : and Othername]</string>
+    <string name="next_of_kin_phone_number">Next of Kin Phone number</string>
+    <string name="bio_data">Bio Data</string>
+    <string name="facial">Facial</string>
+    <string name="biometric">Biometric</string>
+    <string name="premium_type">PREMIUM TYPE</string>
+    <string name="vulnerable_pin">Vulnerable PIN</string>
+    <string name="not_captured">NOT CAPTURED</string>
+    <string name="biometric_status">BIOMETRIC STATUS</string>
+    <string name="photo_icon_description">Photo Icon</string>
+    <string name="camera_icon_description">Camera Icon</string>
+    <string name="bio_data_icon_description">Bio Data Icon</string>
+    <string name="individual_pin">Individual PIN</string>
+    <string name="choose_alternative_provider">Choose different provider from that of principal</string>
+    <string name="dependent_type">DEPENDENT TYPE</string>
+    <string name="biometric_icon_description">Biometric icon</string>
+    <string name="new_enrolment">New Enrolment</string>
+    <string name="enrolled_records">Enrolled Records</string>
+    <string name="user_capture">User Capture</string>
+    <string name="nicare_account">NiCare Account</string>
+    <string name="_1000_pin_left">1000 PIN Left</string>
+    <string name="_253_usage">253 usage</string>
+    <string name="_0_uploads">0 uploads</string>
+    <string name="last_sync">Last Sync 12/06/2019</string>
+    <string name="ward_lga">Wadata Ward, Bida Niger State</string>
+    <string name="biometric_capture">Fingerprint Capture</string>
+    <string name="eo_profile_icon">EO Profile Icon</string>
+    <string name="enrolment_icon">Enrolment Icon</string>
+    <string name="enrolees_list_icon">Enrolees List Icon</string>
+    <string name="install_update_now">Install Now</string>
+    <string name="any_new_update_has_been_downloaded">Your update is ready to install</string>
+    <string name="available_pin_s_icon">Available Pin\'s</string>
+    <string name="used_pin_s_icon">Used Pin\'s Icon</string>
+    <string name="uploads_icon">Uploads Icon</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="na_personal">Bio Data</string>
+    <string name="nav_photo">Photo</string>
+    <string name="nav_fingerprint">Fingerprint</string>
+    <string name="title_activity_premium_sales">Premium Sales</string>
+    <string name="confirm_password">Confirm New Account Password</string>
+    <string name="new_password">New Account Password</string>
+    <string name="old_password">Old Account Password</string>
+    <string name="confirm_pin">Confirm New Device Level PIN</string>
+    <string name="new_pin">New Device Level PIN</string>
+    <string name="old_pin">Old Device Level PIN</string>
+    <string name="title_activity_edit_info">Update Principal</string>
+
+
+    <string name="java_entry_title">Run the ML Kit quickstart written in Java</string>
+    <string name="kotlin_entry_title">Run the ML Kit quickstart written in Kotlin</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="toggle_turn_on">Front</string>
+    <string name="toggle_turn_off">Back</string>
+    <string name="desc_camera_source_activity">Vision detectors demo with live camera preview</string>
+    <string name="desc_still_image_activity">Vision detectors demo with a still image</string>
+    <string name="desc_camerax_live_preview_activity">Vision detectors demo with live preview using CameraX. Note that CameraX is only supported on API 21+</string>
+    <string name="download_error">Download error</string>
+    <string name="start_over">Start over</string>
+    <string name="menu_item_settings">Settings</string>
+    <string name="select_image">Select image</string>
+
+    <!-- Settings related strings. -->
+    <string name="pref_screen_title_live_preview">Live preview settings</string>
+    <string name="pref_screen_title_still_image">Still image settings</string>
+    <string name="pref_screen_title_camerax_live_preview">CameraX live preview settings</string>
+    <string name="pref_category_face_detection">Face Detection</string>
+    <string name="pref_category_object_detection">Object Detection / Custom Object Detection</string>
+    <string name="pref_category_automl">AutoML Image Labeling</string>
+
+    <!-- Strings for camera settings. -->
+    <string name="pref_category_key_camera" translatable="false">pckc</string>
+    <string name="pref_category_title_camera">Camera</string>
+    <string name="pref_key_rear_camera_preview_size" translatable="false">rcpvs</string>
+    <string name="pref_key_rear_camera_picture_size" translatable="false">rcpts</string>
+    <string name="pref_key_front_camera_preview_size" translatable="false">fcpvs</string>
+    <string name="pref_key_front_camera_picture_size" translatable="false">fcpts</string>
+    <string name="pref_key_camerax_target_analysis_size" translatable="false">ctas</string>
+    <string name="pref_key_camera_live_viewport" translatable="false">clv</string>
+    <string name="pref_title_rear_camera_preview_size">Rear camera preview size</string>
+    <string name="pref_title_front_camera_preview_size">Front camera preview size</string>
+    <string name="pref_title_camerax_target_analysis_size">CameraX target analysis resolution</string>
+    <string name="pref_title_camera_live_viewport">Enable live viewport</string>
+    <string name="pref_summary_camera_live_viewport">Do not block camera preview drawing on detection</string>
+
+    <!-- Strings for object detector enable multiple objects preference. -->
+    <string name="pref_title_object_detector_enable_multiple_objects">Enable multiple objects</string>
+    <string name="pref_key_live_preview_object_detector_enable_multiple_objects" translatable="false">lpodemo</string>
+    <string name="pref_key_still_image_object_detector_enable_multiple_objects" translatable="false">siodemo</string>
+
+    <!-- Strings for object detector enable classification preference. -->
+    <string name="pref_title_object_detector_enable_classification">Enable classification</string>
+    <string name="pref_key_live_preview_object_detector_enable_classification" translatable="false">lpodec</string>
+    <string name="pref_key_still_image_object_detector_enable_classification" translatable="false">siodec</string>
+
+    <!-- Strings for face detector landmark mode preference. -->
+    <string name="pref_title_face_detector_landmark_mode">Landmark mode</string>
+    <string name="pref_key_live_preview_face_detection_landmark_mode" translatable="false">lpfdlm</string>
+    <string name="pref_entries_face_detector_landmark_mode_no_landmarks">No landmarks</string>
+    <string name="pref_entries_face_detector_landmark_mode_all_landmarks">All landmarks</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#LandmarkMode -->
+    <string name="pref_entry_values_face_detector_landmark_mode_no_landmarks" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_landmark_mode_all_landmarks" translatable="false">2</string>
+
+    <!-- Strings for face detector contour mode preference. -->
+    <string name="pref_title_face_detector_contour_mode">Contour mode</string>
+    <string name="pref_key_live_preview_face_detection_contour_mode" translatable="false">lpfdcm</string>
+    <string name="pref_entries_face_detector_contour_mode_no_contours">No contours</string>
+    <string name="pref_entries_face_detector_contour_mode_all_contours">All contours</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#ContourMode -->
+    <string name="pref_entry_values_face_detector_contour_mode_no_contours" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_contour_mode_all_contours" translatable="false">2</string>
+
+    <!-- Strings for face detector classification mode preference. -->
+    <string name="pref_title_face_detector_classification_mode">Classification mode</string>
+    <string name="pref_key_live_preview_face_detection_classification_mode" translatable="false">lpfdcfm</string>
+    <string name="pref_entries_face_detector_classification_mode_no_classifications">No classifications</string>
+    <string name="pref_entries_face_detector_classification_mode_all_classifications">All classifications</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#ClassificationMode -->
+    <string name="pref_entry_values_face_detector_classification_mode_no_classifications" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_classification_mode_all_classifications" translatable="false">2</string>
+
+    <!-- Strings for face detector performance mode preference. -->
+    <string name="pref_title_face_detector_performance_mode">Performance mode</string>
+    <string name="pref_key_live_preview_face_detection_performance_mode" translatable="false">lpfdpm</string>
+    <string name="pref_entries_face_detector_performance_mode_fast">Fast</string>
+    <string name="pref_entries_face_detector_performance_mode_accurate">Accurate</string>
+    <!-- The following entry values must match the ones in FaceDetectorOptions#PerformanceMode -->
+    <string name="pref_entry_values_face_detector_performance_mode_fast" translatable="false">1</string>
+    <string name="pref_entry_values_face_detector_performance_mode_accurate" translatable="false">2</string>
+
+    <!-- Strings for face detector face tracking preference. -->
+    <string name="pref_title_face_detector_face_tracking">Face tracking</string>
+    <string name="pref_key_live_preview_face_detection_face_tracking" translatable="false">lpfdft</string>
+
+    <!-- Strings for face detector min face size preference. -->
+    <string name="pref_title_face_detector_min_face_size">Minimum face size</string>
+    <string name="pref_key_live_preview_face_detection_min_face_size" translatable="false">lpfdmfs</string>
+    <string name="pref_dialog_message_face_detector_min_face_size">Proportion of the head width to the image width, and the valid value range is [0.0, 1.0]</string>
+    <string name="pref_toast_invalid_min_face_size">Minimum face size must be a float value and in the range [0.0, 1.0]</string>
+
+
+    <string name="entry_java_title">Java</string>
+    <string name="entry_java_subtitle">Run the MLKit Showcase written in Java.</string>
+    <string name="entry_kotlin_title">Kotlin</string>
+    <string name="entry_kotlin_subtitle">Run the MLKit Showcase written in Kotlin.</string>
+    <string name="mode_odt_live_title">Object Detection: Live Camera</string>
+    <string name="mode_odt_live_subtitle">A device’s live camera can be used to detect objects in an environment.</string>
+    <string name="mode_odt_static_title">Object Detection: Static Image</string>
+    <string name="mode_odt_static_subtitle">One or more objects can be detected from a provided image.</string>
+    <string name="mode_barcode_live_title">Barcode Scanning</string>
+    <string name="mode_barcode_live_subtitle">Read data encoded in most standard barcode formats.</string>
+    <string name="custom_model_live_title">Object Detection: Live Camera with Custom Classification (Birds)</string>
+    <string name="custom_model_live_subtitle">A device\'s live camera can be used to detect birds in an environment.</string>
+    <string name="settings_title">MLKit Showcase Settings</string>
+    <string name="cd_settings_button">Settings</string>
+    <string name="cd_close_button">Back</string>
+    <string name="cd_flash_button">Toggle camera flash</string>
+    <string name="cd_photo_library_button">Upload image</string>
+    <string name="prompt_point_at_an_object">Point your camera at an object</string>
+    <string name="prompt_point_at_a_barcode">Point your camera at a barcode</string>
+    <string name="prompt_point_at_a_bird">Point your camera at a bird</string>
+    <string name="prompt_hold_camera_steady">Keep camera still for a moment</string>
+    <string name="prompt_move_camera_closer">Move closer to search</string>
+    <string name="prompt_searching">Searching&#8230;</string>
+    <string name="product_search_button">Search object</string>
+    <plurals name="bottom_sheet_title">
+        <item quantity="one">%d match found</item>
+        <item quantity="other">%d matches found</item>
+    </plurals>
+    <string name="buttom_sheet_custom_model_title">Custom object found</string>
+    <string name="static_image_prompt_detected_no_results">No results found</string>
+    <string name="static_image_prompt_detected_results">Tap on a dot to inspect</string>
+    <string name="static_image_card_no_result_title">No result found</string>
+    <string name="static_image_card_no_result_subtitle">Support text place holder</string>
+    <string name="static_image_preview_card_subtitle">+%d more results</string>
+
+
+    <!-- Strings for object detection settings. -->
+    <string name="pref_key_object_detector_enable_multiple_objects" translatable="false">odemo</string>
+    <string name="pref_key_object_detector_enable_classification" translatable="false">odec</string>
+
+    <!-- Strings for product search settings. -->
+    <string name="pref_category_product_search">Product search</string>
+    <string name="pref_key_enable_auto_search" translatable="false">pkeas</string>
+    <string name="pref_title_enable_auto_search">Enable auto search</string>
+    <string name="pref_key_confirmation_time_in_manual_search" translatable="false">ctims</string>
+    <string name="pref_title_confirmation_time_in_manual_search">Confirmation time in manual search</string>
+    <string name="pref_summary_confirmation_time_in_manual_search">Ranges from 100ms to 1000ms</string>
+    <string name="pref_key_confirmation_time_in_auto_search" translatable="false">ctias</string>
+    <string name="pref_title_confirmation_time_in_auto_search">Confirmation time in auto search</string>
+    <string name="pref_summary_confirmation_time_in_auto_search">Ranges from 500ms to 2000ms</string>
+
+    <!-- Strings for barcode detection settings. -->
+    <string name="pref_category_barcode_detection">Barcode detection</string>
+    <string name="pref_key_barcode_reticle_width" translatable="false">barcode_brw</string>
+    <string name="pref_title_barcode_reticle_width">Barcode reticle width</string>
+    <string name="pref_summary_barcode_reticle_width" formatted="false">Relative to the camera view width, ranges from 50% to 95%</string>
+    <string name="pref_key_barcode_reticle_height" translatable="false">barcode_brh</string>
+    <string name="pref_title_barcode_reticle_height">Barcode reticle height</string>
+    <string name="pref_summary_barcode_reticle_height" formatted="false">Relative to the camera view height, ranges from 20% to 80%</string>
+    <string name="pref_key_enable_barcode_size_check" translatable="false">barcode_ebsc</string>
+    <string name="pref_title_enable_barcode_size_check">Enable barcode size check</string>
+    <string name="pref_summary_enable_barcode_size_check">Will prompt user to move camera closer if the detected barcode is too small</string>
+    <string name="pref_key_minimum_barcode_width" translatable="false">barcode_mbw</string>
+    <string name="pref_title_minimum_barcode_width">Minimum barcode width</string>
+    <string name="pref_summary_minimum_barcode_width" formatted="false">Relative to the reticle width, ranges from 20% to 80% (only applicable when barcode size check enabled)</string>
+    <string name="pref_key_delay_loading_barcode_result" translatable="false">barcode_dlbr</string>
+    <string name="pref_title_delay_loading_barcode_result">Delay loading barcode result</string>
+    <string name="pref_summary_delay_loading_barcode_result">Will show the loading spinner for 2s</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="premium_sales">Premium Sales</string>
+    <string name="not_captured_message">This will require this enrollee to visit the selected ward of residence to be capture, would you like to capture this enrolee now?</string>
+    <string name="capture_completed">Fingers Captured Completed</string>
+    <string name="install_now">Install now</string>
+    <string name="title_activity_password_recovery">PasswordRecoveryActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_re_capture">ReCaptureActivity</string>
+    <string name="title_activity_un_approved">Recapture List</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="init">Initialize</string>
+    <string name="captureAutoOn">Capture With Auto On</string>
+    <string name="capture">Capture Without Auto On</string>
+    <string name="led">LED</string>
+    <string name="ledon">LED</string>
+    <string name="ledoff">LED Off</string>
+    <string name="sdktest">SDK Test</string>
+    <string name="toggle_led">Toggle LED</string>
+    <string name="match">Verify</string>
+    <string name="matchAutoOn">Verify With Auto On</string>
+    <string name="register">Register</string>
+    <string name="registerAutoOn">Register With Auto On</string>
+    <string name="welcome">Welcome!</string>
+    <string name="cb_matched">Match</string>
+    <string name="cb_scenabled">SC En</string>
+    <string name="auto_on">Auto On</string>
+    <string name="nfiq">NFIQ</string>
+    <string name="mode_n">Mode N</string>
+    <string name="smart_capture">Smart Capture</string>
+    <string name="smart_capture_on">Smart Cap ON</string>
+    <string name="smart_capture_off">Smart Cap OFF</string>
+    <string name="auto_on_enabled">AutoOn ON</string>
+    <string name="auto_on_disabled">AutoOn OFF</string>
+    <string name="capture_mode_n_on">Mode N ON</string>
+    <string name="capture_mode_n_off">Mode N OFF</string>
+    <string name="NFIQ_enabled">NFIQ ON</string>
+    <string name="NFIQ_disabled">NFIQ OFF</string>
+    <string name="usb_bulk_mode_64_on">USB Bulk 64 ON</string>
+    <string name="usb_bulk_mode_64_off">USB Bulk 64 OFF</string>
+    <string name="fingerprint_capture_image">Fingerprint capture image</string>
+    <string name="fingerprint_register_image">Fingerprint register image</string>
+    <string name="fingerprint_verify_image">Fingerprint verify image</string>
+    <string name="secugen_device_image">SecuGen device image</string>
+    <string name="read_serial_number">Read S/N</string>
+    <string name="set_brightness_0">Brightness 0</string>
+    <string name="set_brightness_100">Brightness 100</string>
+    <string name="log">Log</string>
+
+</resources>

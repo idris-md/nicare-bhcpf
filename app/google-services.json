@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "497024278181",
+    "firebase_url": "https://tonic-mobile-ees.firebaseio.com",
+    "project_id": "tonic-mobile-ees",
+    "storage_bucket": "tonic-mobile-ees.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497024278181:android:2cb9f33efd2ab2bdb9b74c",
+        "android_client_info": {
+          "package_name": "com.nicare.ees"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497024278181-dpiqj35n4sah3rdrqk0reuele6sapg28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nicare.ees",
+            "certificate_hash": "9de25ce539ab64cde349d21b6ee7fa35af6967ad"
+          }
+        },
+        {
+          "client_id": "497024278181-2lker5pmlqvhgptrmstuc55u9mfi0r4j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ3F9trF7uyT9fm61X0XbbVmS_2sOwzQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497024278181-2lker5pmlqvhgptrmstuc55u9mfi0r4j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497024278181:android:75e02a816dcb5409b9b74c",
+        "android_client_info": {
+          "package_name": "com.nicare.ves"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497024278181-2lker5pmlqvhgptrmstuc55u9mfi0r4j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ3F9trF7uyT9fm61X0XbbVmS_2sOwzQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497024278181-2lker5pmlqvhgptrmstuc55u9mfi0r4j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

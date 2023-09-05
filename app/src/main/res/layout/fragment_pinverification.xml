@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    tools:context=".fragment.PINVerificationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        style="@style/BoldTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="NiCare Premium PIN Validation" />
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange_red"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        android:text="PIN invalid may not be for this hcpWard" />
+
+    <EditText
+        android:id="@+id/edtPIN"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="number"
+        android:maxLength="16"
+        android:layout_marginTop="2dp"
+        android:hint="NiCare PIN"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edtSerial"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="number"
+        android:maxLength="16"
+        android:layout_marginTop="2dp"
+        android:hint="NiCare PIN Serial"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_button"
+        android:text="Verify"
+        android:textColor="@color/White" />
+
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nicare.ves"
+    android:installLocation="auto">
+    <!--
+ CameraX libraries require minSdkVersion 21, while this quickstart app
+    supports low to 16. Needs to use overrideLibrary to make the merger tool
+    ignore this conflict and import the libraries while keeping the app's lower
+    minSdkVersion value. In code, will check SDK version, before calling CameraX
+    APIs.
+    -->
+    <uses-sdk tools:overrideLibrary="           androidx.camera.camera2, androidx.camera.core,           androidx.camera.view, androidx.camera.lifecycle" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.usb.accessory" />
+
+    <application
+        android:name=".BaseApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AppCompat">
+
+        <activity
+            android:name=".ui.enrol.recapture.UnApprovedActivity"
+            android:label="@string/title_activity_un_approved"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.enrol.recapture.ReCaptureActivity"
+            android:label="@string/title_activity_re_capture"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.auth.user.PasswordRecoveryActivity"
+            android:label="@string/title_activity_password_recovery"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.auth.user.EnrolAuthActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.auth.user.PinRecoveryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.main.AboutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.auth.OutDatedActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--
+ Optional: Add it to automatically download ML model to device after
+          your app is installed.
+        -->
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode,face,ocr,ica" />
+
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.auth.user.WardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.auth.device.SuspendActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".broadcasts.EOStatusReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".broadcasts.SyncStatusReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.enrol.fingerprint.SecuGenActivity"
+            android:label="@string/title_activity_premium_sales"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.auth.device.DeviceBlockedActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.auth.user.SetPasswordActivity"
+            android:label="@string/title_activity_password_auth"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.auth.user.PasswordAuthActivity"
+            android:label="@string/title_activity_password_auth"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- <activity -->
+        <!-- android:name=".ui.premium.QrCodeScannerActivity" -->
+        <!-- android:label="QRCode Scanner" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <activity
+            android:name=".ui.splash.NoNetworkActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.auth.device.DeviceNotVerifyFailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.auth.user.AuthActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.enrol.fingerprint.HuifanActivity"
+            android:label="@string/biometric_capture"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.enrol.vulnerable.EnrolVulnActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.enrol.premium.PinVerificationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.preference.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- SyncAdapter's dummy authentication service -->
+        <activity
+            android:name=".ui.enrol.camera.CameraKitActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".vision.facedetection.LivePreviewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.enrol.vulnerable.VulnerableListActivity"
+            android:label="@string/title_activity_vulnerable_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.enrol.vulnerable.EditVulnerableActivity"
+            android:label="Detail Update"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

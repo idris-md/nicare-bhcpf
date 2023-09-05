@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_logo"
+
+    tools:context=".ui.ScanActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Place Your Finger"
+
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_marginTop="42dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageViewLeft"
+                android:background="@color/colorPrimary"
+                android:text="Captured"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageViewLeft"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:background="@drawable/iv_border"
+                android:src="@drawable/left" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/card"
+                    android:layout_alignStart="@+id/card"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+
+                    android:text="Start with left Fingers, thumb first."
+                    android:textAllCaps="false"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="220dp"
+                    android:layout_height="300dp"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/imageViewFP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp" />
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card"
+                    android:layout_alignStart="@+id/card"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/colorAccent"
+                    android:text="Reset All"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageViewRight"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorPrimary"
+                android:text="Not Captured"
+                android:visibility="gone"
+                android:textAlignment="center"
+
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageViewRight"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:padding="4dp"
+
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/frReason"
+            android:layout_marginBottom="4dp"
+            >
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/checkBox"
+                android:textSize="13sp"
+                android:text="Check if you are unable to capture Finger Print of username to select reason and proceedd" />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frReason"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/btnSkip"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/spinner_border">
+
+            <Spinner
+                android:id="@+id/spReason"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dialog" />
+        </FrameLayout>
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_button"
+            android:text="Skip/Save Fingerpint"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

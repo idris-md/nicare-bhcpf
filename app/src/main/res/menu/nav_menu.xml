@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_bio_data"
+        android:icon="@drawable/ic_person_24dp"
+        android:title="@string/na_personal" />
+
+    <item
+        android:id="@+id/nav_photo"
+        android:icon="@drawable/ic_photo_camera_24dp"
+        android:title="@string/nav_photo" />
+
+    <item
+        android:id="@+id/nav_fingerprint"
+        android:icon="@drawable/ic_fingerprint"
+        android:title="@string/nav_fingerprint" />
+
+</menu>

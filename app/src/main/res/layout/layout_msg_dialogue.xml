@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="6dp">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Error !!"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/success"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Record as been save"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@id/msg"
+            android:layout_marginTop="30dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/view"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Ok"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_logo"
+
+    tools:context=".ui.WardLGAActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="171dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Quick Setup!!"
+        android:textColor="@color/iconColor"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="To prepare your device  for registeation please tell about your registeration center and we will get you readdy"
+        android:textSize="22sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/sem"
+            android:background="@drawable/spinner_border">
+
+            <Spinner
+                android:id="@+id/spLG"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dialog" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner_border">
+
+            <Spinner
+                android:id="@+id/spWard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dialog" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ready"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_button_cadet"
+        android:layout_alignParentBottom="true"
+        android:text="Ready Go"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

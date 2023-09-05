@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginStart="6.0dip"
+    android:layout_marginEnd="6.0dip"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="4.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@id/details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4.0dip">
+
+                <com.tiper.MaterialSpinner
+                    android:id="@id/tvWard"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="170.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textAlignment="center"
+                    android:textColor="@color/primaryDarkColor"
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@id/tv_address"
+                    style="@style/BoldTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Huafana"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/layout_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:cardCornerRadius="6.0dip"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="4.0dip"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginTop="4.0dip"
+                android:layout_marginBottom="4.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4.0dip"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/any_new_update_has_been_downloaded"
+                    android:textColor="@color/primaryDarkColor"
+                    android:textSize="14.0sp"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@id/progressBar"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="12.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="4.0dip"
+                    android:layout_marginEnd="150.0dip"
+                    android:layout_toEndOf="@id/tvUpdate"
+                    android:progress="0" />
+
+                <Button
+                    android:id="@+id/btnInstall"
+                    android:layout_width="140.0dip"
+                    android:layout_height="45.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="0.0dip"
+                    android:layout_marginRight="4.0dip"
+                    android:backgroundTint="@color/primaryDarkColor"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Click to install"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            app:cardCornerRadius="6.0dip"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSyncPin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45.0dip"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="4.0dip"
+                        android:layout_marginRight="4.0dip"
+                        android:backgroundTint="@color/primaryDarkColor"
+                        android:drawableEnd="@drawable/ic_sync_24dp"
+                        android:drawableRight="@drawable/ic_sync_24dp"
+                        android:text="@string/sync_now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12.0sp"
+                        app:cornerRadius="6.0dip" />
+
+                    <TextView
+                        android:id="@+id/tvSync"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="8.0dip"
+                        android:layout_marginLeft="4.0dip"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="BED/200"
+                        android:textColor="@color/primaryDarkColor"
+                        android:textSize="18.0sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.39999998dip"
+                    android:layout_marginTop="4.0dip"
+                    android:layout_marginBottom="4.0dip"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14.0dip"
+                    android:orientation="horizontal"
+                    android:paddingTop="18.0dip"
+                    android:paddingBottom="14.0dip">
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center_horizontal"
+                            android:text="Premiums Avail"
+                            android:textAlignment="center"
+                            android:textColor="@color/white_smoke"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/tvPinLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_horizontal"
+                            android:text="0000"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="24.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Premiums used"
+                            android:textAlignment="center"
+                            android:textColor="@color/white_smoke"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/tvPinUsed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_horizontal"
+                            android:text="0000"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="24.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center_horizontal"
+                            android:text="Total Enrolled"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/tvEnrolled"
+                            style="@style/BoldTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_horizontal"
+                            android:text="0000"
+                            android:textAlignment="center"
+                            android:textSize="24.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center_horizontal"
+                            android:text="Un-Synced"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/tvNotSynced"
+                            style="@style/BoldTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_horizontal"
+                            android:text="0000"
+                            android:textAlignment="center"
+                            android:textSize="24.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center_horizontal"
+                            android:text="Synced"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:id="@+id/tvUploads"
+                            style="@style/BoldTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center_horizontal"
+                            android:text="0000"
+                            android:textAlignment="center"
+                            android:textSize="24.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/enroll"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            app:cardBackgroundColor="#ff6bba9a"
+            app:cardCornerRadius="8.0dip"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginBottom="16.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="12.0dip"
+                    android:layout_marginBottom="16.0dip"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Enrol New Beneficiary"
+                    android:textColor="@color/white_smoke"
+                    android:textSize="24.0sp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/under_five"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:visibility="gone"
+            app:cardBackgroundColor="#ff6bba9a"
+            app:cardCornerRadius="8.0dip"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginBottom="16.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="12.0dip"
+                    android:layout_marginBottom="16.0dip"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Enrol Children Under Five"
+                    android:textColor="@color/white_smoke"
+                    android:textSize="24.0sp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/enrolled"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            app:cardBackgroundColor="#ff7b80d2"
+            app:cardCornerRadius="8.0dip"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="16.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="12.0dip"
+                    android:layout_marginBottom="16.0dip"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/enrolled_records"
+                    android:textColor="@color/white_smoke"
+                    android:textSize="24.0sp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/re_capture"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            app:cardBackgroundColor="#ff29b6f6"
+            app:cardCornerRadius="8.0dip"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginBottom="16.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="12.0dip"
+                    android:layout_marginBottom="16.0dip"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Re-Capture"
+                    android:textColor="@color/white_smoke"
+                    android:textSize="24.0sp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@id/profile"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            app:cardBackgroundColor="#fffdaa68"
+            app:cardCornerRadius="8.0dip"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginBottom="16.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="12.0dip"
+                    android:layout_marginBottom="16.0dip"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Account &amp; History"
+                    android:textColor="@color/white_smoke"
+                    android:textSize="24.0sp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</LinearLayout>
