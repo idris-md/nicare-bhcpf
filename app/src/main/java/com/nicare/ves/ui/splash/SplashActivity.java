@@ -57,20 +57,20 @@ public class SplashActivity extends DaggerAppCompatActivity {
         mSplashViewModel = ViewModelProviders.of(this, mViewModelProviderFactory).get(SplashViewModel.class);
         ButterKnife.bind(this);
 
-//        try {
-//            if (Settings.Global.getInt(getContentResolver(), Settings.Global.AUTO_TIME) == 1) {
-//                // Enabled
-////                Toast.makeText(this, "Auto time enabled", Toast.LENGTH_SHORT).show();
-//            } else {
-//                // Disabled
-////                Toast.makeText(this, "Auto time not enabled", Toast.LENGTH_SHORT).show();
-//            }
-//        } catch (Settings.SettingNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//
-//        initHandler();
-        startActivity(new Intent(this, SecuGenActivity.class));
+        try {
+            if (Settings.Global.getInt(getContentResolver(), Settings.Global.AUTO_TIME) == 1) {
+                // Enabled
+//                Toast.makeText(this, "Auto time enabled", Toast.LENGTH_SHORT).show();
+            } else {
+                // Disabled
+//                Toast.makeText(this, "Auto time not enabled", Toast.LENGTH_SHORT).show();
+            }
+        } catch (Settings.SettingNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        initHandler();
+//        startActivity(new Intent(this, EnrolVulnActivity.class));
 //        startActivity(new Intent(this, HuifanActivity.class));
     }
 
