@@ -754,7 +754,7 @@ public class EnrolVulnActivity extends AppCompatActivity implements com.tsongkha
     private List<Ward> filterAvailableFacWardByLGA(LGA selectedFacLGA) {
         List<Ward> result = new ArrayList<>();
         for (Ward ward : allWard) {
-            if (ward.getLga_id().equalsIgnoreCase(selectedFacLGA.getLgaId()) && ward.getTotalEnrolled() != ward.getEnrolmentCap())
+            if (ward.getLga_id().equalsIgnoreCase(selectedFacLGA.getLgaId()) && (ward.getTotalEnrolled() + ward.getTotalEnrolledRemotely()) < ward.getEnrolmentCap())
                 result.add(ward);
         }
         return result;
