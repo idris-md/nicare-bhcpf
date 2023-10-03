@@ -38,8 +38,8 @@ android {
         }
 
         release {
-            minifyEnabled true
-            debuggable false
+            minifyEnabled false
+            debuggable true
             firebaseCrashlytics {
                 mappingFileUploadEnabled false
             }

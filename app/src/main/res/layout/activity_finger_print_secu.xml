@@ -155,8 +155,8 @@
 
                     <ImageView
                         android:id="@+id/imageViewFP"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="101dp"
+                        android:layout_height="124dp"
                         android:layout_margin="4dp" />
 
                     <ImageView

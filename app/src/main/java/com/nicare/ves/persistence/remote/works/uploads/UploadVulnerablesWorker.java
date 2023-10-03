@@ -102,12 +102,12 @@ public class UploadVulnerablesWorker extends Worker {
         VulnerableRequest vulnerables = getVulnerables();
 
 
-//        Gson gson = new GsonBuilder()
-//                .serializeNulls()
-//                .setLenient()
-//                .create();
-//        String string = gson.toJson(vulnerables);
-//        Log.i("RID DATA-UP", string);
+        Gson gson = new GsonBuilder()
+                .serializeNulls()
+                .setLenient()
+                .create();
+        String string = gson.toJson(vulnerables);
+        Log.i("UPLOAD DATA-UP", string);
 
 //        writeToFile(string, mContext);
 
