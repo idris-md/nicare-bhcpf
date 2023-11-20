@@ -18,6 +18,10 @@ public class Benefactor implements Serializable {
     private int id;
 
     @Expose
+    @SerializedName("id")
+    private int remoteId;
+
+    @Expose
     @SerializedName("benefactor")
     private String name;
 
@@ -47,6 +51,14 @@ public class Benefactor implements Serializable {
 
     public void setHcpcount(int hcpcount) {
         this.name = name;
+    }
+
+    public int getRemoteId() {
+        return remoteId;
+    }
+
+    public void setRemoteId(int remoteId) {
+        this.remoteId = remoteId;
     }
 
     @NonNull

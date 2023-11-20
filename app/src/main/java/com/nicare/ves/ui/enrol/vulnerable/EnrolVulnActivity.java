@@ -1144,7 +1144,7 @@ public class EnrolVulnActivity extends AppCompatActivity implements com.tsongkha
         /////////// confirm input
 
         mEnrollment = new Vulnerable();
-        mEnrollment.setBenefactor(String.valueOf(mBenefactor.getId()));
+        mEnrollment.setBenefactor(String.valueOf(mBenefactor.getRemoteId()));
         mEnrollment.setFirstName(firstName);
         mEnrollment.setSurName(surName);
         mEnrollment.setOtherName(otherName);
