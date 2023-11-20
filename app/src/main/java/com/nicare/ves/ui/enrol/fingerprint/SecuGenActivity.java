@@ -497,19 +497,19 @@ public class SecuGenActivity extends AppCompatActivity
         Log.d(TAG, "Exit onDestroy()");
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////////////
-    //Converts image to grayscale (NEW)
-    public Bitmap toGrayscale(byte[] mImageBuffer, int width, int height) {
-        byte[] Bits = new byte[mImageBuffer.length * 4];
-        for (int i = 0; i < mImageBuffer.length; i++) {
-            Bits[i * 4] = Bits[i * 4 + 1] = Bits[i * 4 + 2] = mImageBuffer[i]; // Invert the source bits
-            Bits[i * 4 + 3] = -1;// 0xff, that's the alpha.
-        }
-
-        Bitmap bmpGrayscale = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-        bmpGrayscale.copyPixelsFromBuffer(ByteBuffer.wrap(Bits));
-        return bmpGrayscale;
-    }
+//    //////////////////////////////////////////////////////////////////////////////////////////////
+//    //Converts image to grayscale (NEW)
+//    public Bitmap toGrayscale(byte[] mImageBuffer, int width, int height) {
+//        byte[] Bits = new byte[mImageBuffer.length * 4];
+//        for (int i = 0; i < mImageBuffer.length; i++) {
+//            Bits[i * 4] = Bits[i * 4 + 1] = Bits[i * 4 + 2] = mImageBuffer[i]; // Invert the source bits
+//            Bits[i * 4 + 3] = -1;// 0xff, that's the alpha.
+//        }
+//
+//        Bitmap bmpGrayscale = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+//        bmpGrayscale.copyPixelsFromBuffer(ByteBuffer.wrap(Bits));
+//        return bmpGrayscale;
+//    }
 
     //////////////////////////////////////////////////////////////////////////////////////////////
     //Converts image to grayscale (NEW)
@@ -524,48 +524,48 @@ public class SecuGenActivity extends AppCompatActivity
         bmpGrayscale.copyPixelsFromBuffer(ByteBuffer.wrap(Bits));
         return bmpGrayscale;
     }
-
-    //////////////////////////////////////////////////////////////////////////////////////////////
-    //Converts image to grayscale (NEW)
-    public Bitmap toGrayscale(Bitmap bmpOriginal) {
-        int width, height;
-        height = bmpOriginal.getHeight();
-        width = bmpOriginal.getWidth();
-        Bitmap bmpGrayscale = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-        for (int y = 0; y < height; ++y) {
-            for (int x = 0; x < width; ++x) {
-                int color = bmpOriginal.getPixel(x, y);
-                int r = (color >> 16) & 0xFF;
-                int g = (color >> 8) & 0xFF;
-                int b = color & 0xFF;
-                int gray = (r + g + b) / 3;
-                color = Color.rgb(gray, gray, gray);
-                //color = Color.rgb(r/3, g/3, b/3);
-                bmpGrayscale.setPixel(x, y, color);
-            }
-        }
-        return bmpGrayscale;
-    }
-
-    //////////////////////////////////////////////////////////////////////////////////////////////
-    //////////////////////////////////////////////////////////////////////////////////////////////
-    //Converts image to binary (OLD)
-    public Bitmap toBinary(Bitmap bmpOriginal) {
-        int width, height;
-        height = bmpOriginal.getHeight();
-        width = bmpOriginal.getWidth();
-        Bitmap bmpGrayscale = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565);
-        Canvas c = new Canvas(bmpGrayscale);
-        Paint paint = new Paint();
-        ColorMatrix cm = new ColorMatrix();
-        cm.setSaturation(0);
-        ColorMatrixColorFilter f = new ColorMatrixColorFilter(cm);
-        paint.setColorFilter(f);
-        c.drawBitmap(bmpOriginal, 0, 0, paint);
-        return bmpGrayscale;
-    }
-
-    //////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    //////////////////////////////////////////////////////////////////////////////////////////////
+//    //Converts image to grayscale (NEW)
+//    public Bitmap toGrayscale(Bitmap bmpOriginal) {
+//        int width, height;
+//        height = bmpOriginal.getHeight();
+//        width = bmpOriginal.getWidth();
+//        Bitmap bmpGrayscale = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+//        for (int y = 0; y < height; ++y) {
+//            for (int x = 0; x < width; ++x) {
+//                int color = bmpOriginal.getPixel(x, y);
+//                int r = (color >> 16) & 0xFF;
+//                int g = (color >> 8) & 0xFF;
+//                int b = color & 0xFF;
+//                int gray = (r + g + b) / 3;
+//                color = Color.rgb(gray, gray, gray);
+//                //color = Color.rgb(r/3, g/3, b/3);
+//                bmpGrayscale.setPixel(x, y, color);
+//            }
+//        }
+//        return bmpGrayscale;
+//    }
+//
+//    //////////////////////////////////////////////////////////////////////////////////////////////
+//    //////////////////////////////////////////////////////////////////////////////////////////////
+//    //Converts image to binary (OLD)
+//    public Bitmap toBinary(Bitmap bmpOriginal) {
+//        int width, height;
+//        height = bmpOriginal.getHeight();
+//        width = bmpOriginal.getWidth();
+//        Bitmap bmpGrayscale = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565);
+//        Canvas c = new Canvas(bmpGrayscale);
+//        Paint paint = new Paint();
+//        ColorMatrix cm = new ColorMatrix();
+//        cm.setSaturation(0);
+//        ColorMatrixColorFilter f = new ColorMatrixColorFilter(cm);
+//        paint.setColorFilter(f);
+//        c.drawBitmap(bmpOriginal, 0, 0, paint);
+//        return bmpGrayscale;
+//    }
+//
+//    //////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////////
     public void DumpFile(String fileName, byte[] buffer) {
         //Uncomment section below to dump images and templates to SD card
@@ -631,7 +631,7 @@ public class SecuGenActivity extends AppCompatActivity
         debugMessage("CreateTemplate() ret:" + result + " [" + dwTimeElapsed + "ms]\n");
         ivFpImage.setImageBitmap(this.toGrayscale(mRegisterImage));
         if (result == SGFDxErrorCode.SGFDX_ERROR_NONE) {
-            if (quality[0] >= 70) {
+            if (quality[0] >= 50) {
 
                 int[] size = new int[1];
                 result = sgfplib.GetTemplateSize(mRegisterTemplate, size);
@@ -789,6 +789,7 @@ public class SecuGenActivity extends AppCompatActivity
                 return;
             }
         }
+        sgfplib.WriteData(SGFDxConstant.WRITEDATA_COMMAND_ENABLE_SMART_CAPTURE, (byte) 1); //Enable Smart Capture
 
         // Auto Scan
 //        debugMessage("Clicked REGISTER WITH AUTO ON\n");
@@ -1184,52 +1185,6 @@ public class SecuGenActivity extends AppCompatActivity
         fingerprintTemplateString = null;
     }
 
-    private void nextLeftFinger() {
-        clearTemplateString();
-//        if (biometric.getLeftOne() == null) {
-//            flagClicked(thumbLeft, 1);
-//            return;
-//        }
-//        if (biometric.getLeftTwo() == null) {
-//            flagClicked(indexLeft, 2);
-//            return;
-//        }
-//        if (biometric.getLeftThree() == null) {
-//            flagClicked(middleLeft, 3);
-//            return;
-//        }
-//        if (biometric.getLeftFour() == null) {
-//            flagClicked(ringLeft, 4);
-//            return;
-//        }
-//        if (biometric.getLeftFive() == null) {
-//            flagClicked(pinkyLeft, 5);
-//        }
-
-    }
-
-    private void nextRightFinger() {
-        clearTemplateString();
-//        if (biometric.getRightOne() == null) {
-//            flagClicked(thumbRight, 6);
-//            return;
-//        }
-//        if (biometric.getRightTwo() == null) {
-//            flagClicked(indexRight, 7);
-//            return;
-//        }
-//        if (biometric.getRightThree() == null) {
-//            flagClicked(middleRight, 8);
-//            return;
-//        }
-//        if (biometric.getRightFour() == null) {
-//            flagClicked(ringRight, 9);
-//            return;
-//        }
-//        if (biometric.getRightFive() == null) {
-//            flagClicked(pinkyRight, 10);
-//        }
-    }
 
     private void flagCaptured(ImageView imageView) {
         imageView.setImageDrawable(getResources().getDrawable(R.drawable.bg_captured));

@@ -43,7 +43,7 @@ public class FacilityWardSpinnerAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         view = inflter.inflate(R.layout.layout_spinner, null);
         TextView names = (TextView) view.findViewById(R.id.text1);
-        names.setText(""+mDrugs.get(i).getName()+" "+mDrugs.get(i).getTotalEnrolled()+"/ "+mDrugs.get(i).getEnrolmentCap());
+        names.setText("" + mDrugs.get(i).getName() + " " + mDrugs.get(i).getTotalEnrolled() + mDrugs.get(i).getTotalEnrolledRemotely() + "/ " + mDrugs.get(i).getEnrolmentCap());
         return view;
     }
 
@@ -52,7 +52,7 @@ public class FacilityWardSpinnerAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
-    public void  clearEntries(){
+    public void clearEntries() {
         mDrugs.clear();
         notifyDataSetChanged();
     }

@@ -4,7 +4,6 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.Settings;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,8 +24,6 @@ import com.nicare.ves.ui.auth.user.AuthActivity;
 import com.nicare.ves.ui.auth.user.EnrolAuthActivity;
 import com.nicare.ves.ui.auth.user.PasswordAuthActivity;
 import com.nicare.ves.ui.auth.user.SetPasswordActivity;
-import com.nicare.ves.ui.enrol.fingerprint.SecuGenActivity;
-import com.nicare.ves.ui.enrol.vulnerable.EnrolVulnActivity;
 
 import javax.inject.Inject;
 
@@ -68,9 +65,9 @@ public class SplashActivity extends DaggerAppCompatActivity {
 //        } catch (Settings.SettingNotFoundException e) {
 //            e.printStackTrace();
 //        }
-//
-//        initHandler();
-        startActivity(new Intent(this, SecuGenActivity.class));
+
+        initHandler();
+//        startActivity(new Intent(this, JSGDActivity.class));
 //        startActivity(new Intent(this, HuifanActivity.class));
     }
 

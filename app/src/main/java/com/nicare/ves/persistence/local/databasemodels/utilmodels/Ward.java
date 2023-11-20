@@ -30,7 +30,11 @@ public class Ward implements Serializable {
     int enrolmentCap;
 
     @Expose
-    @SerializedName("totalEnrolled")
+    @SerializedName("total_enrolled")
+    int totalEnrolledRemotely;
+
+    @Expose
+    @SerializedName("totalEnrolledLocally")
     int totalEnrolled;
 
     public Ward() {
@@ -87,6 +91,14 @@ public class Ward implements Serializable {
 
     public void setTotalEnrolled(int totalEnrolled) {
         this.totalEnrolled = totalEnrolled;
+    }
+
+    public int getTotalEnrolledRemotely() {
+        return totalEnrolledRemotely;
+    }
+
+    public void setTotalEnrolledRemotely(int totalEnrolledRemotely) {
+        this.totalEnrolledRemotely = totalEnrolledRemotely;
     }
 
     @NonNull
