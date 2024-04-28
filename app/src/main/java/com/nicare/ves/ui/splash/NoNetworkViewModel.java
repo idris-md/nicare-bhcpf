@@ -5,9 +5,9 @@ import androidx.lifecycle.LiveDataReactiveStreams;
 import androidx.lifecycle.MediatorLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.nicare.ves.persistence.remote.api.AuthApi;
 import com.nicare.ves.persistence.remote.apimodels.ApiResponse.AuthResponse;
 import com.nicare.ves.persistence.remote.apimodels.DeviceInfo;
-import com.nicare.ves.persistence.remote.api.AuthApi;
 
 import javax.inject.Inject;
 
